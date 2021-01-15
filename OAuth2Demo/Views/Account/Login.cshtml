@@ -1,7 +1,7 @@
 ﻿@model LoginViewModel
 
 <div class="text-center">
-    <h1 class="display-4">External Login</h1>
+    <h1 class="display-4">External Login Provider</h1>
     @{ 
         if(Model.ExternalLogins.Count == 0)
         {
@@ -14,9 +14,9 @@
                     @foreach (var provider in Model.ExternalLogins)
                     {
                         <button type="submit" class="btn btn-primary" style="width:auto"
-                                name="provider" value="@provider"
-                                title="Login using your @provider account">
-                            @provider
+                                name="provider" value="@provider.Name"
+                                title="Login using your @provider.DisplayName account">
+                            @provider.DisplayName
                         </button>
                     }
                 </div>

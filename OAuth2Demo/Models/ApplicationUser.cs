@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace EmployeeManagement.Models
+namespace OAuth2Demo.Models
 {
     public class ApplicationUser : IdentityUser
     {
-
     }
 }
